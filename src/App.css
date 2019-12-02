@@ -1,22 +1,72 @@
-.App {
-  text-align: center;
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
 }
 
-.App-logo {
-  height: 40vmin;
+.todo-app {
+    width: 500px;
+    margin: 50px auto;
+    background: #584d4d;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: fantasy;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-todos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #fff;
+    outline: 0;
+    border: 0;
+    font-family: monospace;
+}
+
+button {
+    width: 200px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background: #211e1e;
+    color: #fff;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+input:focus,
+button:focus {
+    outline: 0;
+    border: 0;
+}
+
+p,ul {
+    text-align: left;
+}
+
+ul {
+    list-style-type: decimal;
+}
+li p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+span {
+    cursor: pointer;
 }
